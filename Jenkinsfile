@@ -28,5 +28,12 @@ pipeline {
       }
     }
 
+    stage('Deliver') {
+      steps {
+        sh 'npm start '
+        input 'input'
+      }
+    }
+
   }
 }
